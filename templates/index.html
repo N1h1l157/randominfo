@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Random Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 40px;
+            padding: 20px;
+            line-height: 1.6;
+            box-shadow: 0px 0px 10px 1px rgba(66, 64, 64, 0.8);
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .headcenter {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            /*             display: flex; */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .info-box {
+            flex: 1 1 48%;
+            display: flex;
+            align-items: space-between;
+            margin-left: 50px;
+            margin-bottom: 5px;
+        }
+
+        .label {
+            font-weight: bold;
+            flex: 0 0 150px;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        .value {
+            flex: 1;
+            text-align: center;
+        }
+
+        .purple-bold {
+            color: purple;
+            font-weight: bold;
+        }
+
+        .buttoncontainer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        button {
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="headcenter">Random Generator</h1>
+    <div class="container">
+        <div class="info-box">
+            <div class="label">Name-ZH:</div>
+            <div class="value purple-bold">{{ name_zh }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Name-QQ:</div>
+            <div class="value">{{ name_qq }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Name-JAP:</div>
+            <div class="value">{{ name_jap }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Name-EN:</div>
+            <div class="value">{{ name_en }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Leet:</div>
+            <div class="value purple-bold">{{ leet }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Pass1:</div>
+            <div class="value">{{ pass1 }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Pass2:</div>
+            <div class="value purple-bold">{{ pass2 }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Phone:</div>
+            <div class="value">{{ phone }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Birth:</div>
+            <div class="value">{{ birth }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Place-EN:</div>
+            <div class="value">{{ place_en }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Place-ZH:</div>
+            <div class="value">{{ place_zh }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Coordinates:</div>
+            <div class="value">{{ coordinates }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">Email:</div>
+            <div class="value">{{ email }}</div>
+        </div>
+        <div class="info-box">
+            <div class="label">UUID:</div>
+            <div class="value">{{ uuid }}</div>
+        </div>
+        <div class="info-box">
+            <div class="info-box">
+            </div>
+        </div>
+        <button class="buttoncontainer" onclick="window.location.reload()">Reload</button>
+</body>
+
+</html>
