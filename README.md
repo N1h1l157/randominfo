@@ -24,7 +24,7 @@ python main.py
 
 ```shell
 # 在～/.bash_profile中添加别名
-leet='shuf -n 1 ~/Personal/juneyao/Tool_Develop_Myself/Random_Leet_Word/leetgen/leet.txt | tee >(pbcopy)'
+leet='shuf -n 1 ~/Personal/xxx/Tool_Develop_Myself/Random_Leet_Word/leetgen/leet.txt | tee >(pbcopy)'
 
 # 使用终端直接输入命令 leet 或者 pass
 leet
